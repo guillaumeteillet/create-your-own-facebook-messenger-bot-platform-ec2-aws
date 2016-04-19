@@ -193,3 +193,28 @@ You should have this return :
  * Reloading web server apache2                                                                                                       * 
 ```
 
+### 5. HTTPS with [Let's encrypt](https://letsencrypt.org/getting-started/)
+
+Run this on your EC2 instance :
+
+```bash
+cd
+sudo su
+git clone https://github.com/letsencrypt/letsencrypt
+cd letsencrypt
+./letsencrypt-auto
+```
+
+Facebook required a https webhook, so we will use let's encrypt to get our ssl certificate.
+When ./letsencrypt-auto is ready (few minutes), you will see this : 
+
+![LETSENCRYPT1](https://cloud.githubusercontent.com/assets/1462301/14651185/1e2aa5dc-066f-11e6-91f5-ffa202a929d9.png)
+
+As you can see, my domain "www.guillaumeteillet.fr" is selected ([*]). You can selected/unselected domain with space bar, navigate with up and down. When the domain name for which you want a SSL certificate is selected, press Enter.
+
+Let's encrypt ask your email address to notify you when the certificate expires. Enter a valid email and press Enter. 
+
+Press Enter again when let's encrypt ask you if you read the Terms.
+
+
+
