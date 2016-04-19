@@ -4,7 +4,7 @@ This walkthrough describes how to create your own bot with Facebook Messenger Pl
 ### Prerequisites
 
 - An AWS account
-- A domain name
+- A domain name (in this tutorial : yourdomainname.com)
 
 ### 1. Create an EC2 instance
 
@@ -147,4 +147,49 @@ npm install
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 apt-get install -y nodejs
 apt-get install -y nano
+apt-get install -y apache2
+cd /etc/apache2/sites-available
+nano yourdomainname.com.conf
 ```
+
+The text editor nano opens, copy and paste this :
+
+```bash
+<VirtualHost *:80>
+	ServerName www.yourdomainname.com
+
+	ServerAdmin webmaster@localhost
+	DocumentRoot /var/www/html
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+Where "www.yourdomainname.com" should be replace by your own domain name.
+
+Save your file : Ctrl + X + S, then press y and enter
+
+In the same directory, run this on your EC2 instance :
+
+```bash
+a2ensite yourdomainname.com.conf
+```
+You should have this return : 
+
+```bash
+Enabling site yourdomainname.com.
+To activate the new configuration, you need to run:
+  service apache2 reload
+```
+
+So now, you have to reload apache2. Just run this command : 
+
+```bash
+service apache2 reload
+```
+You should have this return : 
+
+```bash
+ * Reloading web server apache2                                                                                                       * 
+```
+
