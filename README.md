@@ -140,8 +140,8 @@ Run this on your EC2 instance :
 sudo su
 apt-get update
 apt-get install -y git
-git clone https://github.com/guillaumeteillet/facebook-messenger-bot-platform-ec2-aws.git
-cd facebook-messenger-bot-platform-ec2-aws
+git clone https://github.com/guillaumeteillet/create-your-own-facebook-messenger-bot-platform-ec2-aws.git
+cd create-your-own-facebook-messenger-bot-platform-ec2-aws
 apt-get install -y npm
 npm install
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
