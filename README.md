@@ -274,4 +274,15 @@ Now you're ready to go to Facebook developers panel, create or use existing app 
 
 [Clic here to create your facebook app](https://developers.facebook.com/quickstarts/?platform=web)
 
+Enter the name of your app and then press "Create New Facebook App ID".
+
 ![FIRSTSTEPAPP](https://cloud.githubusercontent.com/assets/1462301/14681291/d4a643c8-0720-11e6-80b7-e4e9ee9e5e81.png)
+
+Enter your email address, choose a category and press "Create App Id".
+
+![EMAILAPP](https://cloud.githubusercontent.com/assets/1462301/14685712/e82a1b80-0735-11e6-9f52-e4c3a2560191.png)
+
+Clic on "Skip Quick Start"
+
+![SKIPSTART](https://cloud.githubusercontent.com/assets/1462301/14685935/f7b628e0-0736-11e6-94ef-a19ac5c5ce76.png)
+
