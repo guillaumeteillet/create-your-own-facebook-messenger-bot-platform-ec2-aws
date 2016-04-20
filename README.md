@@ -195,7 +195,27 @@ You should have this return :
 
 ### 5. HTTPS with [Let's encrypt](https://letsencrypt.org/getting-started/)
 
-Run this on your EC2 instance :
+First, we will open all ports of our ec2 temporarly. On Amazon Web Service, select EC2, Instances (in the left menu), select your instance. In the Description Area, clic on the "security group"
+
+![SECURITYGROUP](https://cloud.githubusercontent.com/assets/1462301/14677583/83323c80-0712-11e6-8c12-fd871470a8cf.png)
+
+You will arrive on the security group page with only one security group. Clic on "Inbound"
+
+![INBOUND](https://cloud.githubusercontent.com/assets/1462301/14677864/bd153e6a-0713-11e6-8955-f5a566507905.png)
+
+Clic on "Edit"
+
+![EDIT](https://cloud.githubusercontent.com/assets/1462301/14677989/4251c97c-0714-11e6-862e-aa20f9f4da98.png)
+
+Clic on "Add Rule"
+
+![ADDRULE](https://cloud.githubusercontent.com/assets/1462301/14678065/8e568be6-0714-11e6-9931-ace22243d775.png)
+
+Then, select "All Trafic" for the type and "Anywhere" for the source. Save the changes.
+
+![ALLTRAFICALLOWED](https://cloud.githubusercontent.com/assets/1462301/14678171/ffae3e9c-0714-11e6-8e24-8717a9d38716.png)
+
+Now, run this on your EC2 instance :
 
 ```bash
 cd
@@ -216,5 +236,34 @@ Let's encrypt ask your email address to notify you when the certificate expires.
 
 Press Enter again when let's encrypt ask you if you read the Terms.
 
+Then select "Easy" and press Enter.
 
+![EASYMODE](https://cloud.githubusercontent.com/assets/1462301/14678302/6bb27090-0715-11e6-9b85-ac39fc0d1bf0.png)
 
+Congratulations ! Your domain have now a ssl certificate !
+
+![BRAVO](https://cloud.githubusercontent.com/assets/1462301/14678347/942b145a-0715-11e6-99f9-6573504d4645.png)
+
+### 6. Test your configuration
+
+Now open your browser and try to go to https://www.yourdomain.com : you should see the Apache Default Page.
+
+![BRAVOAPACHE](https://cloud.githubusercontent.com/assets/1462301/14678613/b4494dfa-0716-11e6-85d6-418038594e81.png)
+
+Now you can remove the "All Trafic" option in your EC2 Instance. On Amazon Web Service, select EC2, Instances (in the left menu), select your instance. In the Description Area, clic on the "security group".
+
+![SECURITYGROUP](https://cloud.githubusercontent.com/assets/1462301/14677583/83323c80-0712-11e6-8c12-fd871470a8cf.png)
+
+You will arrive on the security group page with only one security group. Clic on "Inbound"
+
+![INBOUND](https://cloud.githubusercontent.com/assets/1462301/14677864/bd153e6a-0713-11e6-8955-f5a566507905.png)
+
+Clic on "Edit"
+
+![EDIT](https://cloud.githubusercontent.com/assets/1462301/14677989/4251c97c-0714-11e6-862e-aa20f9f4da98.png)
+
+Clic on the remove icon and save the changes. 
+
+![SAVEREMOVE](https://cloud.githubusercontent.com/assets/1462301/14678714/2d99a04c-0717-11e6-81e6-5db7357afd4e.png)
+
+### 7. Create a Facebook Page and a Facebook App
