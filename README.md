@@ -267,3 +267,11 @@ Clic on the remove icon and save the changes.
 ![SAVEREMOVE](https://cloud.githubusercontent.com/assets/1462301/14678714/2d99a04c-0717-11e6-81e6-5db7357afd4e.png)
 
 ### 7. Create a Facebook Page and a Facebook App
+
+Now you're ready to go to Facebook developers panel, create or use existing app (and page) and setup its' webhooks.
+
+[Clic here to create your facebook page](https://www.facebook.com/pages/create) if you already have a facebook page, you can skip this step. Follow the instruction of facebook : i will not give you details here, it's a very basic facebook page. [If you don't know how to create your facebook page](https://www.facebook.com/help/104002523024878)
+
+[Clic here to create your facebook app](https://developers.facebook.com/quickstarts/?platform=web)
+
+![FIRSTSTEPAPP](https://cloud.githubusercontent.com/assets/1462301/14681291/d4a643c8-0720-11e6-80b7-e4e9ee9e5e81.png)
