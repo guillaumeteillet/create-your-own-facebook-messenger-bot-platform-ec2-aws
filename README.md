@@ -463,16 +463,17 @@ You will arrive on the dashboard of your app. On the left menu choose Messenger.
 
 ![MENUAPPFB](https://cloud.githubusercontent.com/assets/1462301/14718092/ea41c430-07f4-11e6-8f60-9ed8f49cd996.png)
 
-Clic on "Setup Webhook" :
+Clic on **"Setup Webhook"** :
 
 ![SETUPWEBHOOK](https://cloud.githubusercontent.com/assets/1462301/14743415/c213693e-08a1-11e6-9596-7514eb8e4355.png)
 
 Complete the different field :
 
-Callback URL : https://www.yourdomainname.com:55555/webhook (Mine is https://www.guillaumeteillet.fr:55555/webhook)
-Verify Token : The "verifyToken" variable you set previously. (Mine is my_first_messenger_bot)
-Check all the options for Subscription Fields.
-Save the configuration by clic on "Verify and Save"
+**Callback URL :** https://www.yourdomainname.com:55555/webhook (Mine is https://www.guillaumeteillet.fr:55555/webhook)
+**Verify Token :** The "verifyToken" variable you set previously. (Mine is my_first_messenger_bot)
+**Subscription Fields :** Check all the options.
+
+Save the configuration by clic on **"Verify and Save"**
 
 ![COMPLETEWEBHOOK](https://cloud.githubusercontent.com/assets/1462301/14743848/0fd54b2c-08a4-11e6-9394-2e0d71ec9e1e.png)
 
@@ -487,7 +488,7 @@ Open a new terminal and run this command :
 ```bash
 curl -i -H "Content-Type: application/json" -X POST -d "{\"verifyToken\": \"YOUR VERIFY TOKEN\", \"token\": \"YOUR PAGE ACCESS TOKEN\"}" https://www.youdomainname.fr:55555/token
 ```
-Of course, you should replace YOUR VERIFY TOKEN and YOUR PAGE ACCESS TOKEN by your own values (pageToken and verifyToken in the index.js)
+Of course, you should replace **YOUR VERIFY TOKEN** and **YOUR PAGE ACCESS TOKEN** by your own values (pageToken and verifyToken in the index.js)
 
 The answer of the server should be something like this :
 
@@ -509,7 +510,7 @@ Then run this command :
 curl -ik -X POST "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token=YOUR PAGE ACCESS TOKEN"
 ```
 
-Of course, you should replace YOUR PAGE ACCESS TOKEN by your own value (pageToken in the index.js)
+Of course, you should replace **YOUR PAGE ACCESS TOKEN** by your own value (pageToken in the index.js)
 
 The answer of the server should be something like this :
 
