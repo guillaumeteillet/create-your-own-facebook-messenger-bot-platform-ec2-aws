@@ -487,7 +487,7 @@ Open a new terminal and run this command :
 ```bash
 curl -i -H "Content-Type: application/json" -X POST -d "{\"verifyToken\": \"YOUR VERIFY TOKEN\", \"token\": \"YOUR PAGE ACCESS TOKEN\"}" https://www.youdomainname.fr:55555/token
 ```
-Of course, you should replace YOUR VERIFY TOKEN and YOUR PAGE ACCESS TOKEN by your own value (pageToken and verifyToken in the index.js)
+Of course, you should replace YOUR VERIFY TOKEN and YOUR PAGE ACCESS TOKEN by your own values (pageToken and verifyToken in the index.js)
 
 The answer of the server should be something like this :
 
@@ -501,6 +501,34 @@ Date: Fri, 22 Apr 2016 15:42:23 GMT
 Connection: keep-alive
 
 OK
+```
+
+Then run this command : 
+
+```bash
+curl -ik -X POST "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token=YOUR PAGE ACCESS TOKEN"
+```
+
+Of course, you should replace YOUR PAGE ACCESS TOKEN by your own value (pageToken in the index.js)
+
+The answer of the server should be something like this :
+
+```bash
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Pragma: no-cache
+Cache-Control: private, no-cache, no-store, must-revalidate
+Facebook-API-Version: v2.6
+Expires: Sat, 01 Jan 2000 00:00:00 GMT
+Content-Type: application/json; charset=UTF-8
+X-FB-Trace-ID: Fe0XhGA9/Rb
+X-FB-Rev: 2299175
+X-FB-Debug: 3iXH8FfFvQoNYYpVTDZ83cw0q1SxArRbwCbN1lO8EPIUPdtgAy0Z8hqEXULV5abdsQSJBrdtJzpg4zMBZ/Yr1A==
+Date: Fri, 22 Apr 2016 15:50:36 GMT
+Connection: keep-alive
+Content-Length: 16
+
+{"success":true}
 ```
 
 ### 12. Enjoy !
