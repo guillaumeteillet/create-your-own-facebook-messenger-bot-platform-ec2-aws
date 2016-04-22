@@ -470,7 +470,9 @@ Clic on **"Setup Webhook"** :
 Complete the different field :
 
 **Callback URL :** https://www.yourdomainname.com:55555/webhook (Mine is https://www.guillaumeteillet.fr:55555/webhook)
+
 **Verify Token :** The "verifyToken" variable you set previously. (Mine is my_first_messenger_bot)
+
 **Subscription Fields :** Check all the options.
 
 Save the configuration by clic on **"Verify and Save"**
