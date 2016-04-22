@@ -375,11 +375,29 @@ Then, select "Custom TCP Rule" for the type, "55555" for the Port Range and "Any
 
 ### 9. Try to run and access to your webhook.
 
-Soon...
+Go back in your terminal (with the EC2 connection opened) and in the "create-your-own-facebook-messenger-bot-platform-ec2-aws" folder, run this command :
+
+```bash
+node index.js
+```
+
+If you have everything configured properly, you should have this in the terminal :
+
+```bash
+App is ready on port 55555
+```
+
+Now, open a browser and enter this url : https://www.yourdomainname.com:55555/webhook . You shoud have this in your browser : 
+
+```bash
+Error, wrong validation token
+```
+
+Your webhook enabled correctly!
 
 ### 10. Set the webhook on you Facebook app.
 
-Soon...
+Now lets configure the Facebook app. 
 
 ### 11. Enjoy !
 
