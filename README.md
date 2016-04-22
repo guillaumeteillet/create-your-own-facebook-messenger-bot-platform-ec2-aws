@@ -266,7 +266,7 @@ Clic on the remove icon and save the changes.
 
 ![SAVEREMOVE](https://cloud.githubusercontent.com/assets/1462301/14678714/2d99a04c-0717-11e6-81e6-5db7357afd4e.png)
 
-### 7. Create a Facebook Page and a Facebook App
+### 7. Create a Facebook Page, a Facebook App and set the variable in index.js
 
 Now you're ready to go to Facebook developers panel, create or use existing app (and page) and setup its' webhooks.
 
@@ -337,5 +337,26 @@ For the variable "verifyToken" :
 
 Enter a string that will be used by facebook to identify your bot. This can be anything. I decide to set this variable with the string "my_first_messenger_bot".
 
+For the variable "privkey" :
 
+You need to set this variable with the path of the private key of the ssl certificate. If you follow this tutorial with let's encrypt, the path should be : "/etc/letsencrypt/live/yourdomainname.com/privkey.pem"
 
+For the variable "cert" :
+
+You need to set this variable with the path of the certificate of the ssl. If you follow this tutorial with let's encrypt, the path should be : "/etc/letsencrypt/live/yourdomainname.com/cert.pem"
+
+For the variable "cert" :
+
+You need to set this variable with the path of the chain file of the ssl. If you follow this tutorial with let's encrypt, the path should be : "/etc/letsencrypt/live/yourdomainname.com/chain.pem"
+
+Now, save your file : Ctrl + X + S, then press y and enter
+
+### 8. Open the 55555 port on your EC2 instance.
+
+### 9. Try to run and access to your webhook.
+
+### 10. Set the webhook on you Facebook app.
+
+### 11. Enjoy !
+
+### 12. Bonus
