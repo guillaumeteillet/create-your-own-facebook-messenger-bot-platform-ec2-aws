@@ -537,3 +537,4 @@ Now, your basic bot is ready and running ! Congratulations ! :)
 
 Go to your Facebook Page and clic on "Message".
 
+![GIFFINAL](https://cloud.githubusercontent.com/assets/1462301/14747721/0c36f558-08b6-11e6-8bf4-05756cba0c2c.gif)
