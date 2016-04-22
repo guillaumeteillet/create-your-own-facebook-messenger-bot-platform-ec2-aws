@@ -144,6 +144,7 @@ git clone https://github.com/guillaumeteillet/create-your-own-facebook-messenger
 cd create-your-own-facebook-messenger-bot-platform-ec2-aws
 apt-get install -y npm
 npm install
+npm install forever --global
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 apt-get install -y nodejs
 apt-get install -y nano
@@ -387,17 +388,72 @@ If you have everything configured properly, you should have this in the terminal
 App is ready on port 55555
 ```
 
-Now, open a browser and enter this url : https://www.yourdomainname.com:55555/webhook . You shoud have this in your browser : 
+Now your bot is running. Open a browser and enter this url : https://www.yourdomainname.com:55555/webhook . You shoud have this in your browser : 
 
 ```bash
 Error, wrong validation token
 ```
 
-Your webhook enabled correctly!
+Now, we will see how to run your bot in background. First, You can stop the process of your bot with Ctrl + C and after you should run this command :
+
+```bash
+forever start index.js 
+```
+
+You should have something like this in the terminal :
+
+```bash
+warn:    --minUptime not set. Defaulting to: 1000ms
+warn:    --spinSleepTime not set. Your script will exit if it does not stay up for at least 1000ms
+info:    Forever processing file: index.js
+```
+
+Run this command :
+
+```bash
+forever list
+```
+
+You should have something like this in the terminal :
+
+```bash
+info:    Forever processes running
+data:        uid  command         script   forever pid   id logfile                 uptime       
+data:    [0] mgMM /usr/bin/nodejs index.js 31035   31040    /root/.forever/mgMM.log 0:0:9:52.300 
+```
+
+With this command, you can get the path of the logfile. Now, you will "cat" the logfile to check if everything is running well. In my example, I will run "cat /root/.forever/mgMM.log"
+
+```bash
+cat /root/.forever/mgMM.log
+```
+
+You should have something like this in the terminal :
+
+```bash
+App is ready on port 55555
+```
+
+Your webhook is ready ! If you want to stop your bot, you can get the uid of your bot by running :  
+
+```bash
+forever list
+
+======
+info:    Forever processes running
+data:        uid  command         script   forever pid   id logfile                 uptime       
+data:    [0] mgMM /usr/bin/nodejs index.js 31035   31040    /root/.forever/mgMM.log 0:0:9:52.300
+```
+
+And then, run this command (mgMM is ths MY uid, so use your uid !)
+
+```bash
+forever stop mgMM
+```
 
 ### 10. Set the webhook on you Facebook app.
 
-Now lets configure the Facebook app. 
+Now lets configure the Facebook app. Before starting this step, your bot should run on port 55555. 
 
 Go to the Facebook App that you just created : [Facebook Developper website](https://developers.facebook.com/). Clic on My Apps > "Your App"
 
@@ -424,10 +480,32 @@ If everything is configured correctly, you should see this :
 
 ![WEBHOOKOK](https://cloud.githubusercontent.com/assets/1462301/14744123/aec4905c-08a5-11e6-95f5-45ff8d2a5dec.png)
 
-### 11. Enjoy !
+### 11. Link the Facebook Page and the Facebook App.
 
-Soon...
+Open a new terminal and run this command : 
 
-### 12. Bonus
+```bash
+curl -i -H "Content-Type: application/json" -X POST -d "{\"verifyToken\": \"YOUR VERIFY TOKEN\", \"token\": \"YOUR PAGE ACCESS TOKEN\"}" https://www.youdomainname.fr:55555/token
+```
+Of course, you should replace YOUR VERIFY TOKEN and YOUR PAGE ACCESS TOKEN by your own value (pageToken and verifyToken in the index.js)
 
-Soon...
+The answer of the server should be something like this :
+
+```bash
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/plain; charset=utf-8
+Content-Length: 2
+ETag: W/"2-4KoCHiHd29bYzs7HHpz1ZA"
+Date: Fri, 22 Apr 2016 15:42:23 GMT
+Connection: keep-alive
+
+OK
+```
+
+### 12. Enjoy !
+
+Now, your basic bot is ready and running ! Congratulations ! :)
+
+Go to your Facebook Page and clic on "Message".
+
