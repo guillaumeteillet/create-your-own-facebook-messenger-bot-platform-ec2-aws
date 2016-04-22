@@ -399,6 +399,31 @@ Your webhook enabled correctly!
 
 Now lets configure the Facebook app. 
 
+Go to the Facebook App that you just created : [Facebook Developper website](https://developers.facebook.com/). Clic on My Apps > "Your App"
+
+![APPFACEBOOKWEBSITE](https://cloud.githubusercontent.com/assets/1462301/14717216/aa9a3974-07f0-11e6-9007-5dbd7a70a1b9.png)
+
+You will arrive on the dashboard of your app. On the left menu choose Messenger.
+
+![MENUAPPFB](https://cloud.githubusercontent.com/assets/1462301/14718092/ea41c430-07f4-11e6-8f60-9ed8f49cd996.png)
+
+Clic on "Setup Webhook" :
+
+![SETUPWEBHOOK](https://cloud.githubusercontent.com/assets/1462301/14743415/c213693e-08a1-11e6-9596-7514eb8e4355.png)
+
+Complete the different field :
+
+Callback URL : https://www.yourdomainname.com:55555/webhook (Mine is https://www.guillaumeteillet.fr:55555/webhook)
+Verify Token : The "verifyToken" variable you set previously. (Mine is my_first_messenger_bot)
+Check all the options for Subscription Fields.
+Save the configuration by clic on "Verify and Save"
+
+![COMPLETEWEBHOOK](https://cloud.githubusercontent.com/assets/1462301/14743848/0fd54b2c-08a4-11e6-9394-2e0d71ec9e1e.png)
+
+If everything is configured correctly, you should see this :
+
+![WEBHOOKOK](https://cloud.githubusercontent.com/assets/1462301/14744123/aec4905c-08a5-11e6-95f5-45ff8d2a5dec.png)
+
 ### 11. Enjoy !
 
 Soon...
