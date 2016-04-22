@@ -286,3 +286,56 @@ Clic on "Skip Quick Start"
 
 ![SKIPSTART](https://cloud.githubusercontent.com/assets/1462301/14685935/f7b628e0-0736-11e6-94ef-a19ac5c5ce76.png)
 
+You will be redirect on the "Dashboard Page" of the app. 
+
+![DASHBOARDPAGE](https://cloud.githubusercontent.com/assets/1462301/14711871/5462b91a-07db-11e6-9245-a6ed9bfc6af6.png)
+
+Go back in your terminal (with the EC2 connection opened) and in the "create-your-own-facebook-messenger-bot-platform-ec2-aws" folder, run this command : 
+
+```bash
+nano index.js
+```
+
+The nano text editor will open. On line 11, you will see 5 variables : 
+
+```bash
+// Variables
+let pageToken = "";
+const verifyToken = "";
+const privkey = "";
+const cert = "";
+const chain = "";
+```
+
+For the variable "pageToken" : 
+
+Go to the Facebook App that you just created : [Facebook Developper website](https://developers.facebook.com/). Clic on My Apps > "Your App"
+
+![APPFACEBOOKWEBSITE](https://cloud.githubusercontent.com/assets/1462301/14717216/aa9a3974-07f0-11e6-9007-5dbd7a70a1b9.png)
+
+You will arrive on the dashboard of your app. On the left menu choose Messenger.
+
+![MENUAPPFB](https://cloud.githubusercontent.com/assets/1462301/14718092/ea41c430-07f4-11e6-8f60-9ed8f49cd996.png)
+
+Clic on "Get Started".
+
+![ACCEPTMESSENGER](https://cloud.githubusercontent.com/assets/1462301/14720266/eb8816d0-0800-11e6-9aa7-0659efb4c114.png)
+
+Select the page you just created :
+
+![SELECTYOURPAGE](https://cloud.githubusercontent.com/assets/1462301/14720537/3a2a4884-0802-11e6-9d2b-40c848c29b54.png)
+
+A new tab opens : Clic two times on "Okay".
+
+![OKAYTAB](https://cloud.githubusercontent.com/assets/1462301/14720601/8a510bc2-0802-11e6-99e9-0657b7cf0b59.png)
+
+The page closes and you return to the previous page. The Page Access Token will be generated for your facebook page. Copy it and Paste it in the pageToken variable in index.js (on your EC2 Instance).
+
+![TOKEN](https://cloud.githubusercontent.com/assets/1462301/14739064/8a56eabe-0885-11e6-962d-546f7e68fa61.png)
+
+For the variable "verifyToken" : 
+
+Enter a string that will be used by facebook to identify your bot. This can be anything. I decide to set this variable with the string "my_first_messenger_bot".
+
+
+
