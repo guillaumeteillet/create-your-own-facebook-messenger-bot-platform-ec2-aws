@@ -249,23 +249,23 @@ Congratulations ! Your domain have now a ssl certificate !
 
 Now open your browser and try to go to https://www.yourdomain.com : you should see the Apache Default Page.
 
-![BRAVOAPACHE](https://cloud.githubusercontent.com/assets/1462301/14678613/b4494dfa-0716-11e6-85d6-418038594e81.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14678613/b4494dfa-0716-11e6-85d6-418038594e81.png" width="50%">
 
 Now you can remove the **"All Trafic"** option in your EC2 Instance. On Amazon Web Service, select EC2, Instances (in the left menu), select your instance. In the Description Area, clic on the **"security group"**.
 
-![SECURITYGROUP](https://cloud.githubusercontent.com/assets/1462301/14677583/83323c80-0712-11e6-8c12-fd871470a8cf.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14677583/83323c80-0712-11e6-8c12-fd871470a8cf.png" width="70%">
 
 You will arrive on the security group page with only one security group. Clic on **"Inbound"**
 
-![INBOUND](https://cloud.githubusercontent.com/assets/1462301/14677864/bd153e6a-0713-11e6-8955-f5a566507905.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14677864/bd153e6a-0713-11e6-8955-f5a566507905.png" width="70%">
 
 Clic on **"Edit"**
 
-![EDIT](https://cloud.githubusercontent.com/assets/1462301/14677989/4251c97c-0714-11e6-862e-aa20f9f4da98.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14677989/4251c97c-0714-11e6-862e-aa20f9f4da98.png" width="70%">
 
 Clic on the remove icon and save the changes. 
 
-![SAVEREMOVE](https://cloud.githubusercontent.com/assets/1462301/14678714/2d99a04c-0717-11e6-81e6-5db7357afd4e.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14678714/2d99a04c-0717-11e6-81e6-5db7357afd4e.png" width="50%">
 
 ### 7. Create a Facebook Page, a Facebook App and set the variable in index.js
 
