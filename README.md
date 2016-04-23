@@ -124,11 +124,11 @@ Now, you should wait few minutes. You can use this tool [WhatsmyDNS](https://www
 
 On Amazon Web Service, select EC2, Instances (in the left menu), select your instance and clic on **"Connect"** (in the top menu).
 
-![CONNECTEC2](https://cloud.githubusercontent.com/assets/1462301/14646829/615f68ce-065b-11e6-9d32-bcace60ce58e.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14646829/615f68ce-065b-11e6-9d32-bcace60ce58e.png" width="50%">
 
 Copy the ssh command. Mine is **"ssh -i "Guillaume.pem" ubuntu@ec2-54-171-135-46.eu-west-1.compute.amazonaws.com"**. Open a terminal, go to the folder that contains the key pair and paste the ssh command.
 
-![TERMCONNECTION](https://cloud.githubusercontent.com/assets/1462301/14647960/475d5e04-0660-11e6-806f-62fc6b5754a3.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14647960/475d5e04-0660-11e6-806f-62fc6b5754a3.png" width="50%">
 
 Now your are connected on your EC2 Instance. 
 
