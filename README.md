@@ -198,23 +198,23 @@ You should have this return :
 
 First, we will **open all ports of our ec2 temporarly**. On Amazon Web Service, select EC2, Instances (in the left menu), select your instance. In the Description Area, clic on the **"security group"**
 
-![SECURITYGROUP](https://cloud.githubusercontent.com/assets/1462301/14677583/83323c80-0712-11e6-8c12-fd871470a8cf.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14677583/83323c80-0712-11e6-8c12-fd871470a8cf.png" width="80%">
 
 You will arrive on the security group page with only one security group. Clic on **"Inbound"**
 
-![INBOUND](https://cloud.githubusercontent.com/assets/1462301/14677864/bd153e6a-0713-11e6-8955-f5a566507905.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14677864/bd153e6a-0713-11e6-8955-f5a566507905.png" width="80%">
 
 Clic on **"Edit"**
 
-![EDIT](https://cloud.githubusercontent.com/assets/1462301/14677989/4251c97c-0714-11e6-862e-aa20f9f4da98.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14677989/4251c97c-0714-11e6-862e-aa20f9f4da98.png" width="80%">
 
 Clic on **"Add Rule"**
 
-![ADDRULE](https://cloud.githubusercontent.com/assets/1462301/14678065/8e568be6-0714-11e6-9931-ace22243d775.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14678065/8e568be6-0714-11e6-9931-ace22243d775.png" width="50%">
 
 Then, select **"All Trafic"** for the type and **"Anywhere"** for the source. Save the changes.
 
-![ALLTRAFICALLOWED](https://cloud.githubusercontent.com/assets/1462301/14678171/ffae3e9c-0714-11e6-8e24-8717a9d38716.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14678171/ffae3e9c-0714-11e6-8e24-8717a9d38716.png" width="50%">
 
 Now, run this on your EC2 instance :
 
@@ -229,7 +229,7 @@ cd letsencrypt
 Facebook required a https webhook, so we will use let's encrypt to get our ssl certificate.
 When ./letsencrypt-auto is ready (few minutes), you will see this : 
 
-![LETSENCRYPT1](https://cloud.githubusercontent.com/assets/1462301/14651185/1e2aa5dc-066f-11e6-91f5-ffa202a929d9.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14651185/1e2aa5dc-066f-11e6-91f5-ffa202a929d9.png" width="50%">
 
 As you can see, my domain "www.guillaumeteillet.fr" is selected ([*]). You can selected/unselected domain with space bar, navigate with up and down. When the domain name for which you want a SSL certificate is selected, press Enter.
 
@@ -239,11 +239,11 @@ Press Enter again when let's encrypt ask you if you read the Terms.
 
 Then **select "Easy" and press Enter**.
 
-![EASYMODE](https://cloud.githubusercontent.com/assets/1462301/14678302/6bb27090-0715-11e6-9b85-ac39fc0d1bf0.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14678302/6bb27090-0715-11e6-9b85-ac39fc0d1bf0.png" width="50%">
 
 Congratulations ! Your domain have now a ssl certificate !
 
-![BRAVO](https://cloud.githubusercontent.com/assets/1462301/14678347/942b145a-0715-11e6-99f9-6573504d4645.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14678347/942b145a-0715-11e6-99f9-6573504d4645.png" width="50%">
 
 ### 6. Test your configuration
 
