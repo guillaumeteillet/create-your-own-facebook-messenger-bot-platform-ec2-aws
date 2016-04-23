@@ -356,23 +356,23 @@ Now, save your file : **Ctrl + X + S, then press y and enter**
 
 You will open the 55555 port of your EC2 Instance.  On Amazon Web Service, select EC2, Instances (in the left menu), select your instance. In the Description Area, clic on the **"security group"**
 
-![SECURITYGROUP](https://cloud.githubusercontent.com/assets/1462301/14677583/83323c80-0712-11e6-8c12-fd871470a8cf.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14677583/83323c80-0712-11e6-8c12-fd871470a8cf.png" width="70%">
 
 You will arrive on the security group page with only one security group. Clic on **"Inbound"**
 
-![INBOUND](https://cloud.githubusercontent.com/assets/1462301/14677864/bd153e6a-0713-11e6-8955-f5a566507905.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14677864/bd153e6a-0713-11e6-8955-f5a566507905.png" width="70%">
 
 Clic on **"Edit"**
 
-![EDIT](https://cloud.githubusercontent.com/assets/1462301/14677989/4251c97c-0714-11e6-862e-aa20f9f4da98.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14677989/4251c97c-0714-11e6-862e-aa20f9f4da98.png" width="50%">
 
 Clic on **"Add Rule"**
 
-![ADDRULE](https://cloud.githubusercontent.com/assets/1462301/14678065/8e568be6-0714-11e6-9931-ace22243d775.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14678065/8e568be6-0714-11e6-9931-ace22243d775.png" width="50%">
 
 Then, select **"Custom TCP Rule"** for the type, **"55555"** for the Port Range and **"Anywhere"** for the source. Save the changes.
 
-![PORT5555](https://cloud.githubusercontent.com/assets/1462301/14742837/850717fa-089e-11e6-8f3a-c38ebc5fde18.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14742837/850717fa-089e-11e6-8f3a-c38ebc5fde18.png" width="50%">
 
 ### 9. Try to run and access to your webhook.
 
