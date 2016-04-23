@@ -457,15 +457,15 @@ Now lets configure the Facebook app. Before starting this step, your bot should 
 
 Go to the Facebook App that you just created : [Facebook Developper website](https://developers.facebook.com/). Clic on **My Apps > "Your App"**
 
-![APPFACEBOOKWEBSITE](https://cloud.githubusercontent.com/assets/1462301/14717216/aa9a3974-07f0-11e6-9007-5dbd7a70a1b9.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14717216/aa9a3974-07f0-11e6-9007-5dbd7a70a1b9.png" width="50%">
 
 You will arrive on the dashboard of your app. On the left menu **choose Messenger**.
 
-![MENUAPPFB](https://cloud.githubusercontent.com/assets/1462301/14718092/ea41c430-07f4-11e6-8f60-9ed8f49cd996.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14718092/ea41c430-07f4-11e6-8f60-9ed8f49cd996.png" width="50%">
 
 Clic on **"Setup Webhook"** :
 
-![SETUPWEBHOOK](https://cloud.githubusercontent.com/assets/1462301/14743415/c213693e-08a1-11e6-9596-7514eb8e4355.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14743415/c213693e-08a1-11e6-9596-7514eb8e4355.png" width="50%">
 
 Complete the different field :
 
@@ -477,11 +477,11 @@ Complete the different field :
 
 Save the configuration by clic on **"Verify and Save"**
 
-![COMPLETEWEBHOOK](https://cloud.githubusercontent.com/assets/1462301/14743848/0fd54b2c-08a4-11e6-9394-2e0d71ec9e1e.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14743848/0fd54b2c-08a4-11e6-9394-2e0d71ec9e1e.png" width="50%">
 
 If everything is configured correctly, you should see this :
 
-![WEBHOOKOK](https://cloud.githubusercontent.com/assets/1462301/14744123/aec4905c-08a5-11e6-95f5-45ff8d2a5dec.png)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14744123/aec4905c-08a5-11e6-95f5-45ff8d2a5dec.png" width="50%">
 
 ### 11. Link the Facebook Page and the Facebook App.
 
@@ -540,4 +540,4 @@ Now, your basic bot is ready and running ! Congratulations ! :)
 
 Go to your Facebook Page and clic on **"Message"**.
 
-![GIFFINAL](https://cloud.githubusercontent.com/assets/1462301/14747721/0c36f558-08b6-11e6-8bf4-05756cba0c2c.gif)
+<img src="https://cloud.githubusercontent.com/assets/1462301/14747721/0c36f558-08b6-11e6-8bf4-05756cba0c2c.gif">
