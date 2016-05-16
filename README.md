@@ -74,17 +74,17 @@ Enter your domain name (mine is [guillaumeteillet.fr](http://guillaumeteillet.fr
 
 <img src="https://cloud.githubusercontent.com/assets/1462301/14613416/a932d614-059c-11e6-80c6-51acc18c549a.png" width="50%">
 
-Route 53 has created two **Record Set** in your **Hosted Zone** : We will need the 4 DNS (red square on the picture)
+Route 53 has created two **Record Sets** in your **Hosted Zone** : We will need the 4 DNS (red square on the picture)
 
 <img src="https://cloud.githubusercontent.com/assets/1462301/14613523/11bfa950-059d-11e6-9569-27a0ac1f61db.png" width="70%">
 
-Now, change the DNS Name of your domain name (My registar is [OVH](http://ovh.com) so perhaps the procedure is a bit different) :
+Now, change the DNS Name of your domain name (My registrar is [OVH](http://ovh.com) so perhaps the procedure is a bit different) :
 
 Before any change, the DNS name was : 
 
 <img src="https://cloud.githubusercontent.com/assets/1462301/14614072/c1a58e0a-059f-11e6-83ea-98ddfaf7d46a.png" width="70%">
 
-The registar need some time to change the DNS of your domain name : 
+The registrar need some time to change the DNS of your domain name : 
 
 <img src="https://cloud.githubusercontent.com/assets/1462301/14614142/06613cec-05a0-11e6-88c3-588cdbd54ed5.png" width="70%">
 
@@ -226,12 +226,12 @@ cd letsencrypt
 ./letsencrypt-auto
 ```
 
-Facebook required a https webhook, so we will use let's encrypt to get our ssl certificate.
+Facebook required a https Webhook, so we will use let's encrypt to get our ssl certificate.
 When ./letsencrypt-auto is ready (few minutes), you will see this : 
 
 <img src="https://cloud.githubusercontent.com/assets/1462301/14651185/1e2aa5dc-066f-11e6-91f5-ffa202a929d9.png" width="50%">
 
-As you can see, my domain "www.guillaumeteillet.fr" is selected ([*]). You can selected/unselected domain with space bar, navigate with up and down. When the domain name for which you want a SSL certificate is selected, press Enter.
+As you can see, my domain "www.guillaumeteillet.fr" is selected ([*]). You can select/unselect domain with space bar, navigate with up and down. When the domain name for which you want a SSL certificate is selected, press Enter.
 
 Let's encrypt ask your email address to notify you when the certificate expires. **Enter a valid email and press Enter**. 
 
